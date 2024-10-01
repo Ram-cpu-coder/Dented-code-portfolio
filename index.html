@@ -1,32 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/39778fe805.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Marcellus&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- ----------------------------home--------------------- -->
     <section id="home">
-        <div class="wrapper">
-            <div class="nav-bar">
-                <div class="left-navbar">
-                    <img src="./logo.png">
-                </div>
-                <div class="right-navbar">
 
+        <!-- //wrapper -->
+        <div class="wrapper">
+
+            <!-- //nav-bar -->
+            <div class="nav-bar">
+                <!-- //left-navbar -->
+                <div class="left-navbar">
+                    <a href="#"><img src="./logo.png"></a>
+                </div>
+
+                <!-- //right-navbar -->
+                <div class="right-navbar">
+                    <nav class="nav">
+                        <ul class="nav-ul">
+                            <li><a href="#" class="nav-a">Home</a></li>
+                            <li><a href="" class="nav-a">Skills</a></li>
+                            <li><a href="" class="nav-a">Projects</a></li>
+                            <li><a href="" class="nav-a">About</a></li>
+                            <li><a href="" class="nav-a">Contact</a></li>
+                            <i class="fa-solid fa-bars"></i>
+                        </ul>
+                    </nav>
                 </div>
             </div>
 
+            <!-- //main-container -->
             <div class="main-container">
-                <div class="hero-container">
+                <!-- //hero-container -->
+                <div class="left-hero-container">
+
+                    <div class="hero-container">
+                        <!-- left-hero-container -->
+                        <div class="left-top-hero">
+                            <div class="para-hero">
+                                <h3>Hi, I am <span class="highlight">Ram Kumar Dhimal</span> </h3>
+                                <h3>Full Stack Developer</h3>
+                                <h3>I love to code and teach what I know</h3>
+                            </div>
+
+                            <div class="button">
+                                <button class="download-CV">
+                                    <a href="" download>
+                                        Download CV
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- right-hero-container -->
+
+                    <img src="./images/man.png">
 
                 </div>
 
+                <!-- //achievement-container -->
                 <div class="achievement-container">
+                    <div class="achievement">
+                        <img src="./images/badge.png">
+                        <p>Bachelor's in IT</p>
+                    </div>
 
+                    <div class="achievement">
+                        <img src="./images/badge.png">
+                        <p>Full Stack Developer</p>
+                    </div>
+
+                    <div class="achievement">
+                        <img src="./images/badge.png">
+                        <p>Bachelor's in IT</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,4 +97,5 @@
 
     <!-- -------------------------END-home-------------------------- -->
 </body>
+
 </html>
