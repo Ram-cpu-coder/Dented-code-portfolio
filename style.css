@@ -25,8 +25,13 @@ body {
     width: 100%;
     height: auto;
 
+    background: white;
     border-bottom: 1px solid black;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+    
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .left-navbar img {
@@ -113,7 +118,7 @@ body {
 }
 
 .left-hero-container img {
-    height: 150%;
+    height: 120%;
     width: auto;
     align-self: center;
     /* border: 2px solid red; */
@@ -127,7 +132,7 @@ body {
     padding: 10px;
     width: 60%;
 
-
+    
     /* border: 2px solid yellow; */
 }
 
@@ -196,9 +201,12 @@ body {
     border: 1px solid black;
     border-radius: 50px;
     width: 70%;
-    height: 60px;
+    height:auto;
 
-    margin-top: 120px;
+    margin-top: 50px;
+    padding: 5px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
 }
 
 .achievement {
@@ -207,13 +215,17 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: auto;
+    height: auto;
 
-    gap: 5px;
+    gap: 10px;
 }
 
 .achievement img {
     height: 30px;
     width: 30px;
+}
+#red{
+    color: red;
 }
 
 /* ------------------------------END-main-container-------------------------- */
@@ -243,7 +255,9 @@ body {
     width: 100%;
     height: auto;
 }
-
+.projects{
+    margin-top: 50px;
+}
 .header-skills,
 .header-projects {
     font-size: 30px;
@@ -263,6 +277,11 @@ body {
 .images-skills img {
     height: 100px;
     min-width: 100px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images-skills img:hover{
+    transform: scale(1.2);
 }
 
 
@@ -281,6 +300,7 @@ body {
     ;
 
     column-gap: 10px;
+    padding: 0 90px;
 }
 
 
@@ -302,6 +322,8 @@ body {
 
 .img-description {
     width: 90%;
+    font-weight: 350;
+    
 }
 
 .img-description img {
@@ -325,23 +347,94 @@ body {
     margin: 20px 20px;
 }
 .para-description{
-    width: 50%;
-    height: 100px;
+    width: 80%;
+    height: auto;
+    margin-bottom: 40px;
+
+    text-align: center;
+
 }
 .link-icon{
     width: 10%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
 }
 .link-icon img {
     /* border: 2px solid red; */
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.link-icon img:hover{
+    transform: scale(1.2);
 }
 
 /* ----------------------------------------END-skills-and-myprojects-section----------------------- */
+/* -----------------------------------------about------------------------------------------ */
 
+.wrapper-about{
+    background: #c09b48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    width: 100%;
+    height: auto;
 
+    padding-top: 20px;
+}
+.img-about{
+    width: 40%;
+    
+}
+.img-about img{
+    height: auto;
+    width: 70%;
+}
+.text-about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    /* border: 2px solid red; */
+    gap: 10px;
+    width: 50%;
+}
+
+.text-about>h1{
+    margin-bottom: 50px;
+}
+.detail-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.interest{
+    margin-top: 40px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+    flex-wrap: wrap;
+}
+.interest>ul{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.interest>ul li{
+    list-style: none;
+}
+
+/* -----------------------------------------END-about------------------------------------------ */
 /* ------------------------------------media-query------------------------------------ */
 
 @media screen and (max-width: 1200px) {
@@ -409,11 +502,10 @@ body {
     }
 
     .achievement-container {
-        /* flex-direction: column; */
-
+        flex-direction: column;
         gap: 15px;
         flex-wrap: wrap;
-        width: auto;
+        width: 100%;
         height: auto;
         align-items: center;
         padding: 10px;
@@ -423,9 +515,14 @@ body {
         width: auto;
         /* margin: 10px 0; */
     }
-
+    .achievement-container hr{
+        display: none;
+    }
 }
 
+/* @media screen and (max-width: 500px){
+
+} */
 @media screen and (max-width: 420px) {
 
     .main-container {
