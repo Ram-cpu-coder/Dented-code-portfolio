@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     height: auto;
     width: 100%;
@@ -435,6 +437,128 @@ body {
 }
 
 /* -----------------------------------------END-about------------------------------------------ */
+/* =----------------------------------------contact-------------------------------------- */
+.wrapper-contact{
+    margin-top: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: rgb(14, 204, 83);
+    gap: 20px;
+}
+
+.contact-icons img{
+    height: 50px;
+    width: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+.wrapper-contact> h1{
+    margin-top: 30px;
+}
+.contact-icons img:hover{
+    transform: scale(1.2);
+}
+.contact-icons{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 30%;
+    gap: 10px;
+}
+
+.email-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    background: white;
+}
+#email{
+    border: none;
+    /* border-radius: 50px; */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    outline: none;
+}
+.email-input>i {
+    background: transparent;
+    padding: 9.5px;
+    border:none;
+   
+    cursor: pointer;
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.email-input>i:hover{
+    transform: scale(1.2);
+}
+/* =----------------------------------------END-contact-------------------------------------- */
+
+/* ---------------------------------------------footer-section--------------------------------------- */
+.wrapper-footer{
+    margin-top: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: black;
+    color: white;
+
+    gap: 30px;
+}
+
+.text-footer{
+    display: flex;
+
+    justify-content: center;
+    gap: 50px;
+}
+.links-footer p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.social-links-footer p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.text-footer ul{
+    list-style: none;
+}
+
+.text-footer ul>a{
+    text-decoration: none;
+    color: white;
+}
+/* ---------------------------------------------END-footer-section--------------------------------------- */
+/* fixed-button */
+
+#fixed-button{
+    position: relative;
+}
+.fixed{
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+}
+.fixed i{
+    color: white;
+    font-size: 30px;
+    background: black;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    cursor:pointer;
+}
+.fixed i:hover{
+    transform: scale(1.2);
+}
+
 /* ------------------------------------media-query------------------------------------ */
 
 @media screen and (max-width: 1200px) {
