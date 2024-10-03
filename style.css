@@ -510,6 +510,7 @@ body {
     color: white;
 
     gap: 30px;
+    width: 100%;
 }
 
 .text-footer{
@@ -517,6 +518,8 @@ body {
 
     justify-content: center;
     gap: 50px;
+
+    /* width: 100%; */
 }
 .links-footer p{
     margin-bottom: 20px;
@@ -530,11 +533,60 @@ body {
 
 .text-footer ul{
     list-style: none;
+    /* border: 2px solid red; */
+    width: 100%;
 }
 
 .text-footer ul>a{
     text-decoration: none;
     color: white;
+}
+/* 
+.links-footer >ul>a>li::after{
+    content: '';
+    background: white;
+    width: 100%;
+    height: 2px;
+
+    transition: transform 0.2s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    position: relative;
+}
+
+.links-footer>ul>a>li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+
+    position: absolute;
+} */
+ .social-links-footer{
+    width: 100%;
+ }
+ .social-links-footer ul{ 
+    width: 100%;
+ }
+.social-links-footer>ul>a>li{
+    position: relative;
+}
+.social-links-footer >ul>a>li::after{
+    content: '';
+    background: white;
+    width: 100%;
+    height: 2px;
+
+    transition: transform 0.2s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.social-links-footer>ul>a>li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+
 }
 /* ---------------------------------------------END-footer-section--------------------------------------- */
 /* fixed-button */
