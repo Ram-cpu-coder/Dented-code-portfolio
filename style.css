@@ -406,8 +406,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
 
     gap: 10px;
 
@@ -478,9 +478,10 @@ body {
     margin: 10px 0;
 
     text-align: center;
-
-    font-size: 70%;
-
+}
+.para-description p{
+    
+    font-size: 10%;
 }
 
 .link-icon {
