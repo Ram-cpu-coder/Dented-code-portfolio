@@ -330,7 +330,7 @@ body {
 /* projects */
 
 .images-description-projects {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -341,7 +341,7 @@ body {
         "seven eight"
     ;
 
-    column-gap: 10px;
+    column-gap: 20px;
     padding: 0 90px;
 }
 
@@ -349,13 +349,13 @@ body {
 
 .card-projects {
 
-    border: 2px solid yellow;
+    /* border: 2px solid yellow; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 
     gap: 10px;
 
@@ -398,7 +398,7 @@ body {
 
 }
 .link-icon{
-    width: 10%;
+    width: 50px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -649,7 +649,7 @@ body {
 .fixed i{
     color: white;
     font-size: 30px;
-    background: black;
+    background: #c09b48;
     border-radius: 50%;
     transition: transform 0.2s ease-in-out;
     cursor:pointer;
@@ -723,6 +723,7 @@ body {
     .left-hero-container img {
         height: 100%;
     }
+  
 }
 
 @media screen and (max-width: 610px) {
