@@ -167,6 +167,12 @@ body {
     width: auto;
     align-self: center;
     /* border: 2px solid red; */
+
+    transition: transform 0.2s ease-in-out;
+}
+
+.left-hero-container img:hover{
+    transform: scale(1.05);
 }
 
 .hero-container {
