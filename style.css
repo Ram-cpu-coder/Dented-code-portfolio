@@ -360,8 +360,8 @@ body {
         "seven eight"
     ;
 
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 40px;
+    row-gap: 40px;
     padding: 0 90px;
 }
 
@@ -380,7 +380,7 @@ body {
 
     gap: 10px;
 
-    background: grey;
+    background: rgba(182, 156, 86, 0.6);
 
 }
 
@@ -410,6 +410,7 @@ body {
     height: 0;
 
     background: linear-gradient(360deg, rgba(213, 72, 72, 0.2), white);
+    color: black;
     background-size: cover;
     background-position: center center;
     backdrop-filter: blur(15px);
@@ -473,6 +474,11 @@ body {
 }
 .brief-description{
     margin-top: 20px;
+}
+.brief-description h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* ----------------------------------------END-skills-and-myprojects-section----------------------- */
 /* -----------------------------------------about------------------------------------------ */
