@@ -12,12 +12,12 @@
     --white-color: white;
     --black-color: black;
     --border-white-color: white;
+
 }
 
 .wrapper-theme {
     background-color: var(--bg-color);
     color: var(--font-color);
-    /* --border-color: var(--border-color); */
     height: auto;
     width: 100%;
 }
@@ -137,10 +137,41 @@ body {
     font-weight: 600;
 }
 
-.nav-ul i {
+.nav > label i {
     display: none;
 }
+.menu-container{
+    position: relative;
+}
 
+/* ---hamburger---- */
+.menu-links-horizontal{
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    right: -80px;
+    width: 250px;
+    height: auto;
+
+    background: white;
+}
+
+.menu-links-horizontal ul{
+    /* background: white; */
+    border: 1px solid black;
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#menu:checked + .menu-links-horizontal{
+    visibility: visible;
+}
 /* ---------------------------main-container------------------ */
 .main-container {
     /* border: 2px solid red; */
@@ -259,7 +290,7 @@ body {
 
     margin-top: 100px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    padding: 0 20px;
+    padding: 20px 0px;
 }
 
 .achievement {
@@ -547,6 +578,13 @@ body {
 
 .interest>ul li {
     list-style: none;
+    transition: transform 0.2s ease-in-out;
+}
+.interest>ul li:hover{
+    transform: scale(1.2);
+    background: rgb(173, 170, 170);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 /* -----------------------------------------END-about------------------------------------------ */
@@ -795,9 +833,10 @@ body {
         display: none;
     }
 
-    .nav-ul i {
+    .nav > label i {
         display: block;
         padding-right: 10px;
+        /* border: 2px solid red; */
     }
 
     .main-container {
@@ -905,6 +944,14 @@ body {
 
 
 @media screen and (max-width: 520px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-bar{
+        gap: 120px;
+    }
 
     .main-container {
         height: auto;
