@@ -34,12 +34,13 @@
 
 .label-theme>label>i {
     position: fixed;
-    top: 80px;
-    left: 30px;
+    top: 90px;
+    left: 90px;
     z-index: 10;
 
     cursor: pointer;
 
+    color:  rgba(134, 154, 204, 1); ;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -74,7 +75,7 @@ body {
     width: 100%;
     height: auto;
 
-    background: #c09b48;
+    background: rgba(170, 184, 219, 1);
     border-bottom: 1px solid black;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
 
@@ -113,9 +114,10 @@ body {
     position: relative;
 }
 
+
 .nav-a::after {
     content: '';
-    background: red;
+    background: rgba(219, 205, 170, 1);
     width: 100%;
     height: 2px;
 
@@ -139,6 +141,7 @@ body {
 
 .nav > label i {
     display: none;
+    cursor: pointer;
 }
 .menu-container{
     position: relative;
@@ -154,6 +157,11 @@ body {
     height: auto;
 
     background: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-links-horizontal ul{
@@ -167,6 +175,18 @@ body {
     align-items: center;
     gap: 10px;
     font-size: 20px;
+}
+.menu-links-horizontal ul li{
+    list-style: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu-links-horizontal ul li:hover{
+    transform: scale(1.2);
+}
+.menu-links-horizontal ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 #menu:checked + .menu-links-horizontal{
@@ -191,7 +211,7 @@ body {
     width: 100%;
     height: 400px;
 
-    background: #c09b48;
+    background: rgba(134, 154, 204, 1);
     margin-top: 50px;
 
     position: relative;
@@ -310,7 +330,7 @@ body {
 }
 
 #red {
-    color: red;
+    color:  rgba(134, 154, 204, 1); 
 }
 
 /* ------------------------------END-main-container-------------------------- */
@@ -411,7 +431,8 @@ body {
 
     gap: 10px;
 
-    background: rgba(182, 156, 86, 0.6);
+    background:  rgba(134, 154, 204, 1); 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -440,7 +461,7 @@ body {
     width: 100%;
     height: 0;
 
-    background: linear-gradient(360deg, rgba(213, 72, 72, 0.2), white);
+    background: linear-gradient(360deg, rgba(170, 184, 219, 1), white);
     color: black;
     background-size: cover;
     background-position: center center;
@@ -516,7 +537,7 @@ body {
 /* -----------------------------------------about------------------------------------------ */
 
 .wrapper-about {
-    background: #c09b48;
+    background:  rgba(134, 154, 204, 1); 
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -583,9 +604,9 @@ body {
 }
 .interest>ul li:hover{
     transform: scale(1.2);
-    background: rgb(173, 170, 170);
+    background: rgba(170, 184, 219, 1);
     border-radius: 10px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 /* -----------------------------------------END-about------------------------------------------ */
@@ -604,7 +625,7 @@ body {
     margin: auto;
     margin-top: 100px;
 
-    background: rgba(14, 204, 83, 0.3);
+    background:  rgba(134, 154, 204, 1); 
     gap: 20px;
 }
 
@@ -637,27 +658,23 @@ body {
     width: auto;
     height: auto;
     background: white;
-}
-
-#email {
-    border: none;
-    /* border-radius: 50px; */
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    padding: 10px;
-    outline: none;
-}
-
-.email-input>i {
-    background: transparent;
-    padding: 9.5px;
-    border: none;
-
+    border-radius: 10px;
+    padding: 0 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.6);
+    
     cursor: pointer;
-
-    transition: transform 0.2s ease-in-out;
 }
 
-.email-input>i:hover {
+.email-icon>i { 
+    padding: 9.5px;
+    border: 1px solid rgba(134, 154, 204, 1);
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+    margin:10px;
+    color: rgba(134, 154, 204, 1);
+}
+
+.email-icon>i:hover {
     transform: scale(1.2);
 }
 
@@ -772,12 +789,13 @@ body {
     position: fixed;
     right: 40px;
     bottom: 60px;
+    z-index: 10000;
 }
 
 .fixed i {
     color: white;
     font-size: 30px;
-    background: #c09b48;
+    background:  rgba(134, 154, 204, 1); 
     border-radius: 50%;
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
