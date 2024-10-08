@@ -39,7 +39,6 @@
     z-index: 10;
 
     cursor: pointer;
-
     color:  rgba(134, 154, 204, 1); ;
     transition: transform 0.2s ease-in-out;
 }
@@ -421,7 +420,7 @@ body {
 .card-projects {
 
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -447,7 +446,7 @@ body {
     /* border: 2px solid black; */
     height: auto;
     width: 100%;
-
+    border-radius: 10px 10px 0 0;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -552,12 +551,15 @@ body {
 
 .img-about {
     width: 40%;
-
+    transition: transform 0.2s ease-in-out;
 }
 
 .img-about img {
     height: auto;
     width: 70%;
+}
+.img-about:hover{
+    transform: scale(1.1);
 }
 
 .text-about {
