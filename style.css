@@ -73,7 +73,7 @@ body {
     width: 100%;
     height: auto;
 
-    background: white;
+    background: #c09b48;
     border-bottom: 1px solid black;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
 
@@ -147,7 +147,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: 90vh;
 }
 
@@ -853,7 +853,7 @@ body {
 }
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 520px) {
 
     .main-container {
         height: auto;
