@@ -306,7 +306,9 @@ body {
 }
 
 .dynamic-text ul{
-    position: relative;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
 }
 
 .dynamic-text ul>li{
@@ -315,21 +317,29 @@ body {
 
     list-style: none;
     font-weight: 600;
+    animation: slide 6s steps(2) infinite;
+
+}
+
+@keyframes slide {
+    100%{
+        top: -40px;
+    }    
 }
 .dynamic-text ul>li::after{
     content: '';
-    width: 50%;
+    width: 55%;
     height: 100%;
     position: absolute;
     left: 0;
     border-left: 1px solid red;
     background: rgba(134, 154, 204, 1);
-    animation: typing 3s steps(20) infinite;
+    animation: typing 3s steps(10) infinite;
 }
 
 @keyframes typing {
     40%,60% {
-        left: calc(50% + 20px);
+        left: calc(22% + 24px);
     }
     100%{
         left: 0;
