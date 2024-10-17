@@ -747,11 +747,11 @@ body {
     
     cursor: pointer;
 }
-.email-input p > a{
+.email-input a{
     text-decoration: none;
     color: black;
 }
-.email-icon>i { 
+.email-input i { 
     padding: 9.5px;
     border: 1px solid rgba(134, 154, 204, 1);
     border-radius: 50%;
@@ -760,7 +760,7 @@ body {
     color: #3E1CE3;
 }
 
-.email-icon>i:hover {
+.email-input i:hover {
     transform: scale(1.2);
 }
 
