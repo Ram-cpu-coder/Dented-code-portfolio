@@ -54,6 +54,65 @@ html {
     scroll-behavior: smooth;
 }
 
+
+/* ------------------hamburger------------------------- */
+#menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 70;
+    cursor: pointer;
+}
+
+.bar{
+    background: white;
+    height: 4px;
+    width: 30px;
+    border-radius: 5px;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+
+#bar3{
+    transform: translateY(4px);
+}
+
+.icon #bar1{
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.icon #bar2{
+    opacity: 0;
+}
+.icon #bar3{
+    transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-nav{
+    display: none;
+    background: white;
+}
+
+.hamburger-nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+.hamburger-nav ul li a{
+    text-decoration:none;
+    color: black;
+}
+
+.change{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100vh;
+}
+
 body {
     height: auto;
     width: 100%;
@@ -83,7 +142,7 @@ body {
 
     position: sticky;
     top: 0;
-    z-index: 100000000000;
+    z-index: 10;
 }
 
 .left-navbar a {
