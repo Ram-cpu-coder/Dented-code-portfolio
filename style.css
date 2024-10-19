@@ -538,6 +538,12 @@ body {
     font-size: 30px;
     margin-bottom: 30px;
 }
+.header-skills h1{
+    font-size: 45px;
+}
+.header-projects h1{
+    font-size: 45px;
+}
 
 .images-skills {
     margin-top: 20px;
@@ -665,10 +671,7 @@ body {
 
     text-align: center;
 }
-.para-description p{
-    
-    font-size: 1.3vw;
-}
+
 
 .link-icon {
     width: 50px;
