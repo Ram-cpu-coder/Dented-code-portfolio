@@ -645,7 +645,7 @@ body {
 .img-description:hover .description-hovering{
     height: 100%;
     /* transform: scale(1.005); */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px 10px 0 0;
 }
 .link-description {
