@@ -183,13 +183,13 @@ body {
     top: 40px;
     left: 0;
     transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.4s ease-in-out;
+    transform-origin: center;
+    transition: transform 0.2s ease-in-out;
 }
 .left-navbar a h1:hover::after{
     width: 100%;
     transform: scaleX(1);
-    transform-origin: left;
+    transform-origin: center;
 }
 
 #logo{
