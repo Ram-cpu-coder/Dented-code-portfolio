@@ -735,26 +735,31 @@ body {
 .text-about {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     /* border: 2px solid red; */
     gap: 10px;
-    width: 50%;
+    width: 40%;
 }
 
 .text-about>h1 {
     margin-bottom: 50px;
 }
 
-.detail-text {
+.detail-about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 15px;
 }
 
 .interest {
-    margin-top: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
     gap: 15px;
     width: 100%;
 
@@ -1018,6 +1023,74 @@ body {
     }
 }
 
+@media screen and (max-width: 930px) {
+    .wrapper-about {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+
+    .img-about {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .img-about img {
+        height: auto;
+        width: 80%;
+    }
+
+    .text-about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* border: 2px solid red; */
+        width: 80%;
+    }
+
+    .text-about>h1 {
+        margin-bottom: 20px;
+    }
+
+    .detail-about {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        /* gap: 15px; */
+    }
+    
+   
+
+    .interest {
+         /* border: 2px solid red; */
+        margin-top: 40px;
+        padding-bottom: 10px;
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .interest>ul {
+        /* border: 2px solid red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .interest>ul li {
+        list-style: none;
+    }
+}
 @media screen and (max-width: 880px) {
     .nav-bar {
         justify-content: space-between;
@@ -1046,66 +1119,7 @@ body {
         height: 100%;
     }
 
-    .wrapper-about {
-        flex-direction: column;
-    }
-
-
-    .img-about {
-        width: 50%;
-        margin-bottom: 10px;
-    }
-
-    .img-about img {
-        height: auto;
-        width: 100%;
-    }
-
-    .text-about {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* border: 2px solid red; */
-        width: 50%;
-    }
-
-    .text-about>h1 {
-        margin-bottom: 20px;
-    }
-
-    .detail-about {
-        /* border: 2px solid red; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* gap: 15px; */
-    }
     
-   
-
-    .interest {
-        margin-top: 40px;
-        display: flex;
-        gap: 15px;
-        width: 100%;
-
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .interest>ul {
-        /* border: 2px solid red; */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .interest>ul li {
-        list-style: none;
-    }
 
     @keyframes typing {
         40%,60% {
