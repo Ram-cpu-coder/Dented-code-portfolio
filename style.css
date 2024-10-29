@@ -1119,16 +1119,6 @@ body {
         height: 100%;
     }
 
-    
-
-    @keyframes typing {
-        40%,60% {
-            left: calc(25% + 24px);
-        }
-        100%{
-            left: 0;
-        }
-    }
 }
 
 @media screen and (max-width: 610px) {
@@ -1136,7 +1126,7 @@ body {
         width: 100%;
     }
 
-    .achievement-container {
+    /* .achievement-container {
         flex-direction: column;
         gap: 15px;
         flex-wrap: wrap;
@@ -1144,7 +1134,7 @@ body {
         height: auto;
         align-items: center;
         padding: 10px;
-    }
+    } */
 
     .achievement {
         width: auto;
@@ -1156,24 +1146,10 @@ body {
     }
 }
 @media screen and (max-width: 600px) {
-    @keyframes typing {
-        40%,60% {
-            left: calc(35% + 24px);
-        }
-        100%{
-            left: 0;
-        }
-    }
+  
 }
 @media screen and (max-width: 521px) {
-    @keyframes typing {
-        40%,60% {
-            left: calc(40% + 24px);
-        }
-        100%{
-            left: 0;
-        }
-    }
+  
 }
 @media screen and (max-width: 520px) {
   
