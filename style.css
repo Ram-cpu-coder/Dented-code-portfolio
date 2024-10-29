@@ -1126,16 +1126,6 @@ body {
         width: 100%;
     }
 
-    /* .achievement-container {
-        flex-direction: column;
-        gap: 15px;
-        flex-wrap: wrap;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        padding: 10px;
-    } */
-
     .achievement {
         width: auto;
         /* margin: 10px 0; */
@@ -1145,17 +1135,9 @@ body {
         display: none;
     }
 }
-@media screen and (max-width: 600px) {
-  
-}
-@media screen and (max-width: 521px) {
-  
-}
-@media screen and (max-width: 520px) {
-  
-    .nav-bar{
-        gap: 120px;
-    }
+
+@media screen and (max-width: 550px) {
+
 
     .main-container {
         height: auto;
@@ -1177,9 +1159,7 @@ body {
     .hero-container {
         width: auto;
     }
-    .left-top-hero{
-
-    }
+   
     .para-hero {
         justify-content: center;
         align-items: center;
