@@ -312,7 +312,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 90vh;
 }
 
@@ -321,8 +321,8 @@ body {
 .left-hero-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 400px;
+    width: 90%;
+    height: auto;
 
     background: rgba(134, 154, 204, 1);
     margin-top: 50px;
@@ -331,8 +331,10 @@ body {
 }
 
 .left-hero-container img {
-    height: 120%;
-    width: auto;
+    /* height: 50%;
+    width: auto; */
+    width: 300px;
+    aspect-ratio: 4 / 6;
     align-self: center;
     /* border: 2px solid red; */
 
@@ -351,8 +353,6 @@ body {
     align-items: center;
     padding: 10px;
     width: 60%;
-
-
     /* border: 2px solid yellow; */
 }
 
@@ -391,9 +391,6 @@ body {
     position: relative;
 }
 
-.dynamic-text{
-    
-}
 
 .dynamic-text ul{
     height: 40px;
@@ -468,7 +465,7 @@ body {
     justify-content: space-around;
     border: 1px solid var(--border-color);
     border-radius: 50px;
-    width: 100%;
+    width: 90%;
     height: auto;
 
     margin-top: 100px;
@@ -488,8 +485,10 @@ body {
 }
 
 .achievement img {
-    height: 30px;
+    /* height: 30px; */
     width: 30px;
+    object-fit: cover;
+    aspect-ratio: 30 / 30;
 }
 
 #red {
@@ -515,17 +514,18 @@ body {
 /* skills */
 
  #projects{
-    /* margin-top: 100px; */
+    width: 100%;
  }
 .skills,
 .projects {
     margin-top: 100px;
+    /* margin: 0 50px; */
     /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -551,14 +551,18 @@ body {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     gap: 20px;
+
 }
 
 .images-skills img {
     height: 100px;
     min-width: 100px;
     transition: transform 0.3s ease-in-out;
+
+    object-fit: cover;
+    aspect-ratio: 30 / 30;
 }
 
 .images-skills img:hover {
@@ -1106,6 +1110,9 @@ body {
   
 
     .main-container {
+        width: 80%;
+    }
+    .left-hero-container{
         width: 100%;
     }
 
@@ -1174,14 +1181,7 @@ body {
         font-size: 25px;
     }
     
-    @keyframes typing {
-        40%,60% {
-            left: calc(100% + 24px);
-        }
-        100%{
-            left: 0;
-        }
-    }
+   
 }
 @media screen and (max-width: 428px) {
     .dynamic-text ul>li::after{
@@ -1189,14 +1189,7 @@ body {
         width: 100%;
       
     }
-    @keyframes typing {
-        40%,60% {
-            left: calc(100% + 24px);
-        }
-        100%{
-            left: 0;
-        }
-    }
+ 
 
 }
 
