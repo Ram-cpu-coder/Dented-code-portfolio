@@ -657,9 +657,9 @@ body {
     overflow: hidden;
 }
 
-.img-description:hover img{
-    /* transform: scale(1.005); */
-}
+/* .img-description:hover img{
+    transform: scale(1.005);
+} */
 
 .img-description:hover .description-hovering{
     height: 100%;
@@ -707,13 +707,14 @@ body {
     transform: scale(1.2);
 }
 .brief-description{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .brief-description h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5vw;
+    text-align: center;
+    font-size: 1.2rem;
 }
 /* ----------------------------------------END-skills-and-myprojects-section----------------------- */
 /* -----------------------------------------about------------------------------------------ */
