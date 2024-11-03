@@ -343,7 +343,7 @@ body {
 
 .left-hero-container img:hover {
     transform: scale(1.05);
-    z-index: 100000;
+    z-index: 1;
 }
 
 .hero-container {
@@ -508,16 +508,13 @@ body {
     justify-content: center;
     align-items: center;
     gap: auto;
-    /* width: 100%; */
+    width: 100%;
 }
 
 /* skills */
 
- #projects{
-    width: 100%;
- }
-.skills,
-.projects {
+
+.skills {
     margin-top: 100px;
     /* margin: 0 50px; */
     /* border: 2px solid red; */
@@ -529,9 +526,7 @@ body {
     height: auto;
 }
 
-.projects {
-    width: 100%;
-}
+
 
 .header-skills,
 .header-projects {
@@ -571,7 +566,21 @@ body {
 
 
 /* projects */
+#projects{
+    width: 90%;
+ }
 
+.projects{
+    margin-top: 100px;
+    /* margin: 0 50px; */
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
 .images-description-projects {
     /* border: 2px solid red; */
     width: 100%;
@@ -595,7 +604,7 @@ body {
 .card-projects {
 
     border: 1px solid black;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
